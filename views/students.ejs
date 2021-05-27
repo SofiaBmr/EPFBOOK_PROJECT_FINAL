@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css"></link>
+    <script type="text/javascript" src="/students.js"></script>
+  </head>
+  <body>
+    <main>
+    <h1 id="title">Presentation of the students</h1>
+    <p class="long-text" id ="subtitle">
+      You can access to a list of different students. If you want to have more informations on them, you can click on the student you want to know more.</p>
+    <ul class="students" id="students">
+      <div class="list-group">
+        <% for (var i = 0; i<students.length; i++) { %>
+        <a href="/students/<%=i%>" class="list-group-item list-group-item-action" aria-current="true">
+          <%= students[i].name %> - <%= students[i].school %> 
+        </a>
+        <%}%>
+      </div> 
+    </ul>
+   </main>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/student-details.css">
+    <ul class="nav justify-content-center" id="nav">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home page</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/students">List of students</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/students/data">Data visualization</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/students/create">Creation of student</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/students/update">Update of student</a>
+        </li>
+    </ul>
+</head>
+
+<body>
+    <div id="title">
+        Informations about the student
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm" id="text">
+                <u>Name of the student :</u>
+                <%=students[id].name%> <br><br> <u>School/University :</u>
+                    <%=students[id].school%> <br><br> <u>Birth Date :</u>
+                        <%=students[id].birth_date%> <br><br> <u>Mail :</u>
+                            <%=students[id].email_adress%> <br><br> <u>GPA :</u>
+                                <%=students[id].GPA%> <br><br>
+            </div>
+</body>
+<script src="/js/bootstrap.js"></script>
+
+</html>
