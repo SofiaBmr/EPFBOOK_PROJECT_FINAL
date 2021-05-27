@@ -3,11 +3,31 @@
     <link rel="stylesheet" href="/style.css"></link>
     <script type="text/javascript" src="/students.js"></script>
   </head>
+  <head>
+    <link rel="stylesheet" href="/style.css"></link>
+    <ul class="nav justify-content-center" id="nav">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home page</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/students">List of students</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/students/data">Data visualization</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/students/create">Creation of student</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/students/update">Update of student</a>
+        </li>
+    </ul>
+</head>
   <body>
     <main>
     <h1 id="title">Presentation of the students</h1>
     <p class="long-text" id ="subtitle">
-      You can access to a list of different students. If you want to have more informations on them, you can click on the student you want to know more.</p>
+      If you want to check the details of the different students, you can click on their name!</p>
     <ul class="students" id="students">
       <div class="list-group">
         <% for (var i = 0; i<students.length; i++) { %>
