@@ -2,40 +2,36 @@
 
 <head>
     <link rel="stylesheet" href="/style.css"></link>
-    <ul class="nav justify-content-center" id="nav">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home page</a>
+    <ul>
+        <li>
+            <a aria-current="page" href="/">Home page</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/students">List of students</a>
+        <li>
+            <a href="/students">List of students</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/students/data">Data visualization</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/students/create">Creation of student</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/students/update">Update of student</a>
+        <li>
+            <a href="/students/data">Data visualization</a>
         </li>
     </ul>
 </head>
 
 <body>
-    <div id="title">
-        Informations about the student
-    </div>
+    <h1 align="center">
+        Informations about the student:
+    </h1>
+
     <div class="container">
         <div class="row">
             <div class="col-sm" id="text">
                 <u>Name of the student :</u>
-                <%=students[id].name%> <br><br> <u>School/University :</u>
+                <%=students[id].name%> <br><br> <u>School :</u>
                     <%=students[id].school%> <br><br> <u>Birth Date :</u>
                         <%=students[id].birth_date%> <br><br> <u>Mail :</u>
                             <%=students[id].email_adress%> <br><br> <u>GPA :</u>
                                 <%=students[id].GPA%> <br><br>
+
             </div>
+        </p>
 </body>
-<script src="/js/bootstrap.js"></script>
 
 </html>

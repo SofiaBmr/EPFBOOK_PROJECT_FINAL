@@ -4,38 +4,29 @@
     <script type="text/javascript" src="/students.js"></script>
   </head>
   <head>
-    <link rel="stylesheet" href="/style.css"></link>
-    <ul class="nav justify-content-center" id="nav">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home page</a>
+    <link href="/style.css"></link>
+    <ul >
+        <li >
+            <a aria-current="page" href="/">Home page</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/students">List of students</a>
+        <li>
+            <a href="/students/data">Data visualization</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/students/data">Data visualization</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/students/create">Creation of student</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/students/update">Update of student</a>
-        </li>
-    </ul>
 </head>
   <body>
     <main>
-    <h1 id="title">Presentation of the students</h1>
+    <h1 id="title">Presentation of the students: </h1>
     <p class="long-text" id ="subtitle">
       If you want to check the details of the different students, you can click on their name!</p>
     <ul class="students" id="students">
       <div class="list-group">
         <% for (var i = 0; i<students.length; i++) { %>
         <a href="/students/<%=i%>" class="list-group-item list-group-item-action" aria-current="true">
-          <%= students[i].name %> - <%= students[i].school %> 
+          <%= students[i].name %> <br><br>
         </a>
         <%}%>
       </div> 
+    <img src="https://www.nicepng.com/png/detail/0-1255_student-clipart-walking-students-clipart.png"/>
     </ul>
    </main>
   </body>
