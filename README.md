@@ -2,7 +2,7 @@
 
 # Installation
 
-You need to install node, then run: 
+You need to install node on your computer, then run: 
 node install npm
 then npm run dev 
 
