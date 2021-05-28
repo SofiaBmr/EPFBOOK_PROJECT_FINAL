@@ -4,7 +4,7 @@
 
 You need to install node, then run: 
 node install npm
-npm run dev 
+then npm run dev 
 
 # Excercice 0 
 
