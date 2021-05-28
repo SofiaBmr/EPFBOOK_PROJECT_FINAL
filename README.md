@@ -4,7 +4,7 @@
 
 You need to install node on your computer, then run: 
 node install npm
-then npm run dev 
+then run node app.js
 
 # Excercice 0 
 
